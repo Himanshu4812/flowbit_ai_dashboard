@@ -19,16 +19,16 @@ A production-grade dashboard built for **Flowbit Private Limited (Internship Ass
 
 ---
 
-# 📸 Screenshots
+## 📸 Screenshots
 
 ### ✅ Dashboard Overview
-/public/dashboard.jpg
+![Dashboard Overview](./public/dashboard.jpg)
 
 ### ✅ Charts & Analytics
-/public/charts.jpg
+![Charts & Analytics](./public/charts.jpg)
 
 ### ✅ Profile Section
-/public/profile.jpg
+![Profile Section](./public/Profile.jpg)
 
 
 ---
