@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/form"
 import { Switch } from "@/components/ui/switch"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Separator } from "../ui/separator"
+
 import { toast } from "sonner"
 
 const notificationsFormSchema = z.object({
@@ -24,7 +24,7 @@ const notificationsFormSchema = z.object({
 
 type NotificationsFormValues = z.infer<typeof notificationsFormSchema>
 
-const defaultValues: Partial<NotificationsFormValues> = {
+const defaultValues: NotificationsFormValues = {
   communication_emails: true,
   marketing_emails: false,
   social_emails: true,
@@ -32,14 +32,14 @@ const defaultValues: Partial<NotificationsFormValues> = {
 }
 
 export function NotificationsForm() {
-  const form = useForm<NotificationsFormValues>({
-    resolver: zodResolver(notificationsFormSchema),
-    defaultValues,
-  })
+        const form = useForm({
+            resolver: zodResolver(notificationsFormSchema),
+            defaultValues,
+        })
 
-  function onSubmit(data: NotificationsFormValues) {
-    toast.success("Notification settings updated!")
-  }
+    function onSubmit(_: NotificationsFormValues) {
+        toast.success("Notification settings updated!")
+    }
 
   return (
     <Card>

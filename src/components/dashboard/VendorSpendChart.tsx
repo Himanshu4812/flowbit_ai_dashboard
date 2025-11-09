@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import { vendorSpendData } from '@/lib/mockData';
 
 const CustomTooltip = ({ active, payload }: any) => {
@@ -43,9 +43,9 @@ const VendorSpendChart = () => {
               <Tooltip cursor={{ fill: 'hsl(var(--primary-light))' }} content={<CustomTooltip />} />
               <Bar dataKey="spend" radius={[0, 4, 4, 0]}>
                 {vendorSpendData.map((entry, index) => (
-                  <Bar
+                  <Cell
                     key={`cell-${index}`}
-                    // @ts-ignore
+                    // @ts-ignore - fill colors come from CSS variables
                     fill={entry.vendorName === 'Global Supply' ? 'hsl(var(--chart-1))' : 'hsl(var(--chart-3))'}
                   />
                 ))}

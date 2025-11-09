@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { ChatMessageData } from '@/lib/types';
-import { Bot, Copy, User } from 'lucide-react';
+import { Bot, Copy } from 'lucide-react';
 import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis } from 'recharts';
 
 const ChatMessage = ({ message }: { message: ChatMessageData }) => {

@@ -1,5 +1,3 @@
-import { ReactNode } from "react";
-
 export interface KpiCardData {
     title: string;
     value: string;

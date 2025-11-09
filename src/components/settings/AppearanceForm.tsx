@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -17,9 +16,7 @@ import { useTheme } from "@/components/theme-provider"
 import { toast } from "sonner"
 
 const appearanceFormSchema = z.object({
-  theme: z.enum(["light", "dark", "system"], {
-    required_error: "Please select a theme.",
-  }),
+  theme: z.enum(["light", "dark", "system"]),
 })
 
 type AppearanceFormValues = z.infer<typeof appearanceFormSchema>

@@ -4,7 +4,7 @@ import InvoiceList from '@/components/invoice/InvoiceList';
 import InvoicePagination from '@/components/invoice/InvoicePagination';
 import InvoiceToolbar from '@/components/invoice/InvoiceToolbar';
 import { invoicePageData } from '@/lib/mockData';
-import { InvoicePageData, InvoiceStatus } from '@/lib/types';
+import { InvoiceStatus } from '@/lib/types';
 
 const Invoice = () => {
   const [activeTab, setActiveTab] = useState<InvoiceStatus>('All');

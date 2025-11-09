@@ -5,7 +5,6 @@ import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { MoreHorizontal } from 'lucide-react';
 import { InvoicePageData } from '@/lib/types';
-import { cn } from '@/lib/utils';
 
 interface InvoiceListProps {
   invoices: InvoicePageData[];

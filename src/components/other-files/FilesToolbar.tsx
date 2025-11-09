@@ -1,7 +1,7 @@
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Button } from '@/components/ui/button';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
-import { ListFilter, Plus, Upload } from 'lucide-react';
+import { ListFilter, Upload } from 'lucide-react';
 import { FileType } from '@/lib/types';
 
 interface FilesToolbarProps {
